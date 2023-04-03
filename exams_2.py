@@ -11,11 +11,18 @@ def euler(l_0,h):
         f_0f_l = function(l_0)
         l_1 = l_0 + f_0f_l *h
         l_0 = l_1
-    print(l_1)
+    # print(l_1)
+    return l_1
+tetha = []    
+a = euler(1200,30)
+tetha.append(a)
 
-    
-euler(1200,30)
-euler(1200,60)
-euler(1200,120)
-euler(1200,240)
-euler(1200,480)
+b = euler(1200,60)
+tetha.append(b)
+c = euler(1200,120)
+tetha.append(c)
+d = euler(1200,240)
+tetha.append(d)
+e = euler(1200,480)
+tetha.append(e)
+print("temperature = ",tetha)
