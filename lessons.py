@@ -36,7 +36,7 @@ def grade_score(average_score):
 grade_score(60.5)
 
 
-##A program that adds and multiply two numbers
+### A program that adds and multiply two numbers ###
 def add_numbers():
     first_number = int(input("Enter your first number: "))
     second_number = int(input("Enter your second number: "))
@@ -70,6 +70,33 @@ def guess_game():
 
 guess_game()
 
+
+##### the collaz problem from the python book ###########
+def number():
+    user_input = int(input("Enter any number: "))
+    return user_input
+
+
+def collaz(number):
+    num = number()
+    
+    while num > 1:
+        print(num)
+
+        if num % 2 == 0:
+            a = num//2
+            # print(a)
+            num = a
+            if num == 1:
+                print(num)
+                continue  
+        elif num % 2 == 1:
+            b = 3*num + 1
+            # print(b)
+            num = b
+        
+        
+collaz(number)
 
 
 
